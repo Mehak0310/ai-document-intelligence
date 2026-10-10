@@ -1,0 +1,36 @@
+# Private inputs and derived data: never publish either corpus or vector metadata.
+/backend/data/
+/data/
+/.local/
+**/index.faiss
+**/index.pkl
+**/*.sqlite*
+**/*.db
+**/__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.aws/
+.codex/
+*.pdf
+*.docx
+!examples/cedar-handbook.pdf
+!examples/harbor-support.pdf
+!examples/adversarial-test.pdf
+node_modules/
+dist/
+coverage/
+.coverage*
+htmlcov/
+.pytest_cache/
+test-results/
+playwright-report/
+.DS_Store
+
+# Local application and tool logs.
+*.log

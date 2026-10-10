@@ -1,0 +1,14 @@
+# Deterministic CI does not need Torch, Transformers, model downloads or Ollama.
+fastapi==0.143.0
+starlette==1.7.0
+uvicorn==0.39.0
+python-multipart==0.0.31
+pydantic==2.12.5
+requests==2.33.0
+langchain-core==1.6.9
+langchain-text-splitters==1.1.2
+faiss-cpu==1.13.0
+pypdf==6.20.0
+pytest==9.1.1
+pytest-cov==6.2.1
+httpx==0.28.1

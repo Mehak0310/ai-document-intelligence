@@ -1,0 +1,12 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+markers = ["local_e2e: opt-in real Hugging Face and Ollama checks"]
+
+[tool.coverage.run]
+source = ["backend", "scripts"]
+omit = ["backend/monitoring.py", "backend/feature_store.py", "backend/non_gen_ai.py"]
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 90
