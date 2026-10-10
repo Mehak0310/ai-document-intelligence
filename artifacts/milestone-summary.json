@@ -17,7 +17,7 @@
     "production_build": "passed",
     "playwright": "3 passed on Chromium",
     "dependency_checks": "pip check passed; 79 Python packages and full frontend tree: 0 known advisories",
-    "security_checks": "candidate and reachable-history scans clean; 15/15 originals unchanged; staged scan required before commit"
+    "security_checks": "staged and reachable-history scans: 0 findings; 15/15 originals unchanged"
   },
   "coverage": {
     "status": "passed",
@@ -47,5 +47,5 @@
     "Publication guard is heuristic; retain provenance and visual review.",
     "CI for this forthcoming commit has not run yet."
   ],
-  "commit_sha": "f4208a6feff1554567f579cd89276148b3f29268"
+  "commit_sha": "20961fc28675fff32437db21123f77a2e8828209"
 }
