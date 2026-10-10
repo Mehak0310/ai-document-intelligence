@@ -1,10 +1,15 @@
 ﻿{
     "milestone":  "github-safe-checkin-and-workflow-setup",
-    "status":  "partial",
+    "status":  "passed",
     "changed_files":  [
+                          ".gitattributes",
                           ".gitignore",
                           "AGENTS.md",
-                          "artifacts/milestone-summary.json"
+                          "README.md",
+                          "artifacts/milestone-summary.json",
+                          "docs/publication-checklist.md",
+                          "docs/verification-results.json",
+                          "docs/verification.md"
                       ],
     "tests":  {
                   "backend":  "40 passed, 1 opt-in real-model test skipped",
@@ -35,9 +40,9 @@
                               "Committed screenshots were visually reviewed and contain synthetic content only."
                           ],
     "outstanding_issues":  [
-                               "Authenticated GitHub repository creation and push are pending because GitHub CLI is unavailable.",
-                               "Python advisory scan was not rerun because pip-audit is not installed.",
-                               "The project has no license; keep the repository private until licensing is reviewed."
+                               "Python advisory scan was not rerun because pip-audit is not installed; the committed verification snapshot reports zero known advisories.",
+                               "The project has no license; keep the repository private until licensing is reviewed.",
+                               "GitHub Actions has not completed for this check-in yet."
                            ],
-    "commit_sha":  null
+    "commit_sha":  "06e005f4a81ddbb96281eeddbea891e0604d5f22"
 }
