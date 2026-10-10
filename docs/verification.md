@@ -7,9 +7,9 @@ Chromium; no paid API, private document generation, public hosting or pull reque
 
 | Check | Actual result |
 |---|---|
-| Deterministic Python suite | 40 passed; one real-model test skipped by default |
+| Deterministic Python suite | 55 passed; one real-model test skipped by default |
 | Active backend statement coverage | 364/364 statements, 100% |
-| Backend plus utility-script coverage | 464/483 statements, 96.07%; exceeds 90% gate |
+| Backend plus utility-script coverage | 517/537 statements, 96.28%; exceeds 90% gate |
 | Clean lightweight Python environment | Deterministic tests passed without Torch or model downloads |
 | Frontend component tests | 9 passed |
 | TypeScript and production Vite build | Passed |
@@ -18,10 +18,10 @@ Chromium; no paid API, private document generation, public hosting or pull reque
 | Automated accessibility | Zero axe violations in tested mobile light/dark states |
 | Responsive styling | Styled page and dark theme asserted; no horizontal overflow at 375px |
 | Source download | Browser downloaded original PDF bytes; `%PDF-` signature verified |
-| Separate real Ollama end-to-end test | 1 passed on the final Python 3.11 stack |
+| Separate real Ollama end-to-end test | Earlier upgrade verification: 1 passed; not rerun for this workflow-only check-in |
 | Real evaluation | 16 cases across two configurations, zero generation errors; see evaluation report |
 | Dependency consistency | `pip check`: no broken requirements |
-| Resolved backend/test advisory scan | 79 resolved dependencies; zero known advisories in the final snapshot |
+| Resolved backend/test advisory scan | Fresh check-in scan: 79 locked dependencies; zero known advisories |
 | Frontend advisory scan | Zero known advisories in the audited lockfile tree |
 | Original private artifact integrity | 15/15 unchanged against the pre-upgrade manifest |
 

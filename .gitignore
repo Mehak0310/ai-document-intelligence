@@ -4,6 +4,12 @@
 /.local/
 **/index.faiss
 **/index.pkl
+*.faiss
+*.pkl
+*.pickle
+*.pfx
+*.p12
+*.credentials
 **/*.sqlite*
 **/*.db
 **/__pycache__/

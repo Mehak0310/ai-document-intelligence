@@ -19,5 +19,7 @@ Owner authorization was provided for a private repository check-in. No public re
 - [x] Use only resume claims supported in `docs/resume-evidence.md`.
 - [x] Obtain explicit owner approval before repository creation, GitHub push, public hosting or PR.
 
-CI is configured and will run after the first private push. Python advisory tooling was not installed during this check-in; the existing resolved advisory report remains part of the reviewed tree.
+The existing private remote and matching `main` history were verified through GitHub before this check-in. Its preceding workflow run completed successfully. Fresh scans found zero known advisories in all 79 locked Python packages and the full frontend dependency tree. The publication guard scans staged blobs and reachable history; reviewed screenshots and reproducible synthetic PDFs supplement this heuristic scan.
+
+Original private artifacts remain unchanged (15/15 hashes). Earlier commits contain the owner's author email in Git metadata; existing history is preserved, and new commits use the verified account's GitHub noreply address. Licensing must be reviewed before any public release.
 
