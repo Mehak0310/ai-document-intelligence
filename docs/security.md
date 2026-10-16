@@ -1,7 +1,5 @@
 # Security boundaries and data protection
 
-This is a single-user local demonstration, not a verified production service.
-
 ## Private data preservation
 
 Before source changes, `.gitignore` was added and an ignored snapshot of the original code and data
