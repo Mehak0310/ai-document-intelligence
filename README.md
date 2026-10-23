@@ -1,4 +1,24 @@
-﻿# AI Document Intelligence
+# AI Document Intelligence
+
+## Portfolio overview
+
+**Applied GenAI / RAG project:** React + TypeScript and FastAPI PDF question answering with LangChain text splitting, MiniLM embeddings, FAISS retrieval, SQLite and local Ollama generation. Evidence excerpts and citation validation support grounded answers.
+
+```mermaid
+flowchart LR
+  A[Text PDF] --> B[Extract and chunk]
+  B --> C[MiniLM embeddings]
+  C --> D[SQLite]
+  Q[Question] --> E[FAISS retrieval]
+  D --> E
+  E --> F[Ollama answer]
+  F --> G[Citation validation]
+  G --> H[React evidence UI]
+```
+
+**Scope:** Single-user local portfolio demonstration. SSE, OCR, DOCX, LangGraph and agents are not currently implemented. See [architecture](docs/architecture.md) and [security](docs/security.md).
+
+---
 
 A local, single-user PDF RAG application with a React/TypeScript interface, FastAPI backend,
 Hugging Face embeddings, FAISS retrieval and Ollama generation. Answers expose original pages,
@@ -18,7 +38,7 @@ production operations and general answer accuracy are not claimed.
 No OCR, DOCX, conversational memory, agents, LangGraph, MCP or reranking is implemented.
 The old private documents and FAISS index are preserved and not automatically imported.
 
-## Local setup ? Windows
+## Local setup — Windows
 
 Use Python 3.11 and Node 22 for the documented/CI setup. Patched dependencies require Python
 3.10 or newer. The full environment and a clean lightweight test environment were verified
@@ -135,7 +155,7 @@ flowchart LR
     C --> UI
 ```
 
-[Detailed architecture decisions](docs/architecture.md) ? [API contract](docs/api.md) ?
+[Detailed architecture decisions](docs/architecture.md) · [API contract](docs/api.md) ?
 [Specification and acceptance evidence](docs/specification.md)
 
 ## Data safety and limitations
@@ -161,7 +181,7 @@ The repository is intended to remain private during development. No public hosti
 
 ## Portfolio artifacts
 
-[Interview guide](docs/interview-guide.md) ? [Resume evidence](docs/resume-evidence.md) ?
+[Interview guide](docs/interview-guide.md) · [Resume evidence](docs/resume-evidence.md) ?
 [Verification report](docs/verification.md)
 
 ![Synthetic desktop workflow](docs/screenshots/synthetic-desktop.png)
